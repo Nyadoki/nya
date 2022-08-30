@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="static/css/loading.css">
+    <link rel="stylesheet" href="/static/css/MemorialDay.css">
 </head>
 <body class="locked">
     <div class="self-avatar flex-center">
@@ -35,10 +36,6 @@
         <div class="content-container">
             <div class="self-wrapper">
                 <div class="self-content links-container flex-center text-center">
-                    <a href="https://Naynna.eu.org/HOME/" class="link-item">
-                        <div class="link-icon"><i class="fa fa-home"></i></div>
-                        <div>HOME</div>
-                    </a>
                     <a href="https://Naynna.eu.org/mcdgrules.html" class="link-item">
                         <div class="link-icon"><i class="fa fa-qq"></i></div>
                         <div>MCDGRULES</div>
@@ -82,8 +79,6 @@
         </div>
         <div class="footer-container text-center">© 2022 <a href="https://github.com/Naynna">Naynna</a> | <a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20220976" target="_blank"> 20220976 </a>号</div>
     </div>
-    <audio id="audio_player" src="http://m801.music.126.net/20220820122448/0c9c2b31f8b98d0a861902586310c157/jdymusic/obj/w5zDlMODwrDDiGjCn8Ky/2041305385/f3df/4232/0a49/335a03658f431f228f0b98a0320e93b4.mp3" autoplay="autoplay" loop="loop" preload="auto">
-    </audio>
 </body>
 
 <link rel="stylesheet" href="static/css/main.css">
@@ -150,7 +145,10 @@
     }
     ];
         var senArr = [
-            {
+        {
+                ch: ["shi,zhe,ru,si"],
+                py: ["逝者如斯"],
+            }, {
                 ch: ["Lite is allowing yourself"],
                 py: ["Lite is allowing yourself"],
             }, {
@@ -174,21 +172,5 @@
         Init(feedType, feedPath, bgArr, senArr);
     })();
 </script>
-
-<script>
-    var originTitle = document.title;
-    var titleTime;
-    document.addEventListener("visibilitychange", function () {
-        if (document.hidden) {
-        document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
-        clearTimeout(titleTime);
-    } else {
-        document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
-        titleTime = setTimeout(function () {
-            document.title = originTitle;
-        }, 2000);
-    }
-    });
-    </script>
     
 </html>
