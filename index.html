@@ -77,7 +77,7 @@
                 <div class="btn-select-indicator"></div>
             </div>
         </div>
-        <div class="footer-container text-center">© 2022 <a href="https://github.com/Naynna">Naynna</a> | <a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20220976" target="_blank"> 20220976号 </a></div>
+        <div class="footer-container text-center">© 2022 <a href="https://github.com/Naynna">Naynna</a> | <a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20220976" target="_blank"> 20220976 </a>号</div>
     </div>
     <audio id="audio_player" src="http://m801.music.126.net/20220820122448/0c9c2b31f8b98d0a861902586310c157/jdymusic/obj/w5zDlMODwrDDiGjCn8Ky/2041305385/f3df/4232/0a49/335a03658f431f228f0b98a0320e93b4.mp3" autoplay="autoplay" loop="loop" preload="auto">
     </audio>
@@ -147,7 +147,10 @@
     }
     ];
         var senArr = [
-            {
+        {
+                ch: ["shi,zhe,ru,si"],
+                py: ["逝者如斯"],
+            }, {
                 ch: ["Lite is allowing yourself"],
                 py: ["Lite is allowing yourself"],
             }, {
@@ -155,10 +158,10 @@
                 py: ["sheng'ming", "ji'shi", "zi'wo'bao'rong"],
             }, {
                 py: ["bu'yao", "zai", "qi'pian", "wo", "hao'ma", "?"],
-	            ch: ["不要","再","欺骗","我","好吗","?"]
-	        }, {
-	            py: ["qing", "bu'yao", "tu'ran", "ba'wo", "diu'diao", "."],
-	            ch: ["请", "不要", "突然", "把我", "丢掉", "."]
+                ch: ["不要","再","欺骗","我","好吗","?"]
+            }, {
+                py: ["qing", "bu'yao", "tu'ran", "ba'wo", "diu'diao", "."],
+                ch: ["请", "不要", "突然", "把我", "丢掉", "."]
             }, {
                 ch: ["is a student but not at age of 24."],
                 py: ["is a student but not at age of 24."],
@@ -174,24 +177,4 @@
         Init(feedType, feedPath, bgArr, senArr);
     })();
 </script>
-
-<script>
-    var originTitle = document.title;
-    var titleTime;
-    document.addEventListener("visibilitychange", function () {
-      if (document.hidden) {
-        document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
-        clearTimeout(titleTime);
-      } else {
-        document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
-        titleTime = setTimeout(function () {
-          document.title = originTitle;
-        }, 2000);
-      }
-    });
-  </script>
-
-<style>
-
-</style>
 </html>
