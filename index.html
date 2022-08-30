@@ -161,9 +161,6 @@
                 py: ["qing", "bu'yao", "tu'ran", "ba'wo", "diu'diao", "."],
                 ch: ["请", "不要", "突然", "把我", "丢掉", "."]
             }, {
-                ch: ["is a student but not at age of 24."],
-                py: ["is a student but not at age of 24."],
-            }, {
                 ch: ["border-radius: 50%;"],
                 py: ["border-radius: 50%;"],
             }, {
@@ -175,4 +172,21 @@
         Init(feedType, feedPath, bgArr, senArr);
     })();
 </script>
+
+<script>
+    var originTitle = document.title;
+    var titleTime;
+    document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+        document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+        clearTimeout(titleTime);
+    } else {
+        document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+        titleTime = setTimeout(function () {
+            document.title = originTitle;
+        }, 2000);
+    }
+    });
+    </script>
+    
 </html>
