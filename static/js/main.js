@@ -7,7 +7,7 @@
  *
  */
 
-NodeList.prototype.forEach = NodeList.prototype.forEach || function (callback) {
+ NodeList.prototype.forEach = NodeList.prototype.forEach || function (callback) {
     for (let i = 0; i < this.length; i++) {
         callback.call(this[i], this[i], i)
     }
