@@ -9,7 +9,7 @@
     pointer-events: none;
     transition: all 0.5s;
     height: 50vh;
-    left: 0vw;
+    left: 0;
 	
   }
   .notify-container .notify {
@@ -27,7 +27,7 @@
     font-size: 1.0rem;
   }
   .notify-container .notify .content {
-    margin-top: 1.5px;
+    margin-top: 2px;
     /*color: #eee;*/
     font-size: 0.80rem;
   }

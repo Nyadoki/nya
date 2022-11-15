@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/gh/Bhaoo/Cuckoo@2.0.1/assets/js/nprogress.min.js"></script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <link rel="stylesheet" href="https://fonts.font.im/css?family=Varela+Round">
-    <style>body{font-family:Varela Round}</style><style>.mdui-appbar .mdui-typo-title{font-family:Varela Round}</style>
+    <style>body{font-family:Varela Round,sans-serif}</style><style>.mdui-appbar .mdui-typo-title{font-family:Varela Round,sans-serif}</style>
     <meta name="description" content="欢迎加入我的世界地下城(MCDG)玩家交流群！" />
     <meta name="keywords" content="Naynna,Kusuri Shiori,Shiori,莓芯,娇羞,mcdgrule,MCDG群规,MCDG入群须知,MCDG入群须知 / 群规,cn">
   <meta name="generator" content="Typecho 1.1/17.10.30" />
@@ -29,8 +29,7 @@
   <link rel="alternate" type="application/atom+xml" title="MCDG群 - 入群须知/总群规 &raquo; lilac &raquo; ATOM 1.0" href="https://mewoth.cyou/feed/atom/mcdgrule.html" />
   <link rel="stylesheet" href="//mewoth.cyou/static/js/APlayer.min.js">
   <script type="text/javascript" src="//mewoth.cyou/static/js/APlayer.min.js"></script>
-  <script>var meting_api="https://mewoth.cyou/action/metingapi?server=:server&type=:type&id=:id&auth=:auth&r=:r";</script>
-  <link rel="stylesheet" type="text/css" href= "//mewoth.cyou/static/css/notify2.css" />
+  <link rel="stylesheet" type="text/css" href= "//mewoth.cyou/static/css/ntify2.css" />
   <style>
     #Snow{
         position: fixed;
@@ -54,15 +53,6 @@
             <i class="mdui-icon material-icons">menu</i>
           </a>
           <a href="v" class="mdui-typo-title">Shiori</a>
-          <div class="mdui-toolbar-spacer"></div>
-          <div class="mdui-textfield mdui-textfield-expandable mdui-float-right appbar-search">
-            <button class="mdui-textfield-icon mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></button>
-            <form id="search" method="post" action="https://mewoth.cyou/" role="search">
-              <input class="mdui-textfield-input" type="text" id="s" name="s" placeholder="搜索一下" />
-              <button type="submit" style="display:none;">搜索</button>
-            </form>
-            <button class="mdui-textfield-close mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">close</i></button>
-          </div>
           <button class="mdui-btn mdui-btn-icon qrcode" mdui-menu="{target: '#qrcode'}" mdui-tooltip="{content: '跨设备阅读'}"><i class="mdui-icon material-icons">devices</i></button>
           <div class="mdui-menu" id="qrcode" style="width: 170px;height: 170px;transform-origin: 100% 0px; position: fixed; text-align:center;"><div style='margin-top: 63px;' class="mdui-spinner mdui-spinner-colorful"></div></div>
           <button onclick="brightness()" id="brightness" class="mdui-textfield-close mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">brightness_5</i></button>
@@ -238,7 +228,7 @@
 <div onclick="if (!window.__cfRLUnblockHandlers) return false; tocOverlay()" class="toc-overlay" data-cf-modified-45c528352f0fcca859bc8854-=""></div>
 <button class="mdui-fab mdui-fab-fixed mdui-ripple top mdui-color-theme-accent"><i class="mdui-icon material-icons">arrow_upward</i></button>
 <footer>
-  <img style="width:32px;height:32px;margin-bottom:-8px" src="https://icp.gov.moe/images/ico64.png"><a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20226221" target="_blank"> 20226221 号</a>|<script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1280802937&web_id=1280802937"></script><p>&copy; 2022 <a href="https://github.com/Naynna/">Naynna</a><br><br><span id="cuckoo-copy">Theme <a href="https://github.com/bhaoo/cuckoo" target="_blank">Cuckoo</a> by <a href="https://dwd.moe/" target="_blank">Bhao</a>｜Powered By <a href="http://www.typecho.org" target="_blank">Typecho</a></span></p></footer>
+  <a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20226221" target="_blank"> 20226221 号</a>|<script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1280802937&web_id=1280802937"></script><p>&copy; 2022 <a href="https://github.com/Naynna/">Naynna</a><br><br><span id="cuckoo-copy">Theme <a href="https://github.com/bhaoo/cuckoo" target="_blank">Cuckoo</a> by <a href="https://dwd.moe/" target="_blank">Bhao</a>｜Powered By <a href="http://www.typecho.org" target="_blank">Typecho</a></span></p></footer>
 <script src="https://cdn.jsdelivr.net/gh/Bhaoo/Cuckoo@2.0.1/assets/js/mdui.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/Bhaoo/Cuckoo@2.0.1/assets/js/highlight.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/Bhaoo/Cuckoo@2.0.1/assets/js/lazyload.min.js"></script>
@@ -279,123 +269,119 @@ $('pre code').each(function(i, block) {hljs.highlightBlock(block)});});</script>
 
 <canvas id="Snow"></canvas>
 <script>
-  if(true){
-      (function() {
-          var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
-          function(callback) {
+  (function () {
+    window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
+            function (callback) {
               window.setTimeout(callback, 1000 / 60);
-          };
-          window.requestAnimationFrame = requestAnimationFrame;
-      })();
+            };
+  })();
+  (function () {
+    var flakes = [],
+            canvas = document.getElementById("Snow"),
+            ctx = canvas.getContext("2d"),
+            flakeCount = 200,
+            mX = -100,
+            mY = -100;
 
-      (function() {
-          var flakes = [],
-              canvas = document.getElementById("Snow"),
-              ctx = canvas.getContext("2d"),
-              flakeCount = 200,
-              mX = -100,
-              mY = -100;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
-          canvas.width = window.innerWidth;
-          canvas.height = window.innerHeight;
+    function snow() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-          function snow() {
-              ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (var i = 0; i < flakeCount; i++) {
+        var flake = flakes[i],
+                x = mX,
+                y = mY,
+                minDist = 150,
+                x2 = flake.x,
+                y2 = flake.y;
 
-              for (var i = 0; i < flakeCount; i++) {
-                  var flake = flakes[i],
-                      x = mX,
-                      y = mY,
-                      minDist = 150,
-                      x2 = flake.x,
-                      y2 = flake.y;
+        var dist = Math.sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y)),
+                dx = x2 - x,
+                dy = y2 - y;
 
-                  var dist = Math.sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y)),
-                      dx = x2 - x,
-                      dy = y2 - y;
+        if (dist < minDist) {
+          var force = minDist / (dist * dist),
+                  xcomp = (x - x2) / dist,
+                  ycomp = (y - y2) / dist,
+                  deltaV = force / 2;
 
-                  if (dist < minDist) {
-                      var force = minDist / (dist * dist),
-                          xcomp = (x - x2) / dist,
-                          ycomp = (y - y2) / dist,
-                          deltaV = force / 2;
+          flake.velX -= deltaV * xcomp;
+          flake.velY -= deltaV * ycomp;
 
-                      flake.velX -= deltaV * xcomp;
-                      flake.velY -= deltaV * ycomp;
-
-                  } else {
-                      flake.velX *= .98;
-                      if (flake.velY <= flake.speed) {
-                          flake.velY = flake.speed
-                      }
-                      flake.velX += Math.cos(flake.step += .05) * flake.stepSize;
-                  }
-
-                  ctx.fillStyle = "rgba(255,255,255," + flake.opacity + ")";
-                  flake.y += flake.velY;
-                  flake.x += flake.velX;
-
-                  if (flake.y >= canvas.height || flake.y <= 0) {
-                      reset(flake);
-                  }
-
-                  if (flake.x >= canvas.width || flake.x <= 0) {
-                      reset(flake);
-                  }
-
-                  ctx.beginPath();
-                  ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
-                  ctx.fill();
-              }
-              requestAnimationFrame(snow);
-          };
-
-          function reset(flake) {
-              flake.x = Math.floor(Math.random() * canvas.width);
-              flake.y = 0;
-              flake.size = (Math.random() * 3) + 2;
-              flake.speed = (Math.random() * 1) + 0.5;
-              flake.velY = flake.speed;
-              flake.velX = 0;
-              flake.opacity = (Math.random() * 0.5) + 0.3;
+        } else {
+          flake.velX *= .98;
+          if (flake.velY <= flake.speed) {
+            flake.velY = flake.speed
           }
+          flake.velX += Math.cos(flake.step += .05) * flake.stepSize;
+        }
 
-          function init() {
-              for (var i = 0; i < flakeCount; i++) {
-                  var x = Math.floor(Math.random() * canvas.width),
-                      y = Math.floor(Math.random() * canvas.height),
-                      size = (Math.random() * 3) + 2,
-                      speed = (Math.random() * 1) + 0.5,
-                      opacity = (Math.random() * 0.5) + 0.3;
+        ctx.fillStyle = "rgba(255,255,255," + flake.opacity + ")";
+        flake.y += flake.velY;
+        flake.x += flake.velX;
 
-                  flakes.push({
-                      speed: speed,
-                      velY: speed,
-                      velX: 0,
-                      x: x,
-                      y: y,
-                      size: size,
-                      stepSize: (Math.random()) / 30 * 1,
-                      step: 0,
-                      angle: 180,
-                      opacity: opacity
-                  });
-              }
+        if (flake.y >= canvas.height || flake.y <= 0) {
+          reset(flake);
+        }
 
-              snow();
-          };
+        if (flake.x >= canvas.width || flake.x <= 0) {
+          reset(flake);
+        }
 
-          document.addEventListener("mousemove", function(e) {
-              mX = e.clientX,
+        ctx.beginPath();
+        ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      requestAnimationFrame(snow);
+    };
+
+    function reset(flake) {
+      flake.x = Math.floor(Math.random() * canvas.width);
+      flake.y = 0;
+      flake.size = (Math.random() * 3) + 2;
+      flake.speed = (Math.random() * 1) + 0.5;
+      flake.velY = flake.speed;
+      flake.velX = 0;
+      flake.opacity = (Math.random() * 0.5) + 0.3;
+    }
+
+    function init() {
+      for (var i = 0; i < flakeCount; i++) {
+        var x = Math.floor(Math.random() * canvas.width),
+                y = Math.floor(Math.random() * canvas.height),
+                size = (Math.random() * 3) + 2,
+                speed = (Math.random() * 1) + 0.5,
+                opacity = (Math.random() * 0.5) + 0.3;
+
+        flakes.push({
+          speed: speed,
+          velY: speed,
+          velX: 0,
+          x: x,
+          y: y,
+          size: size,
+          stepSize: (Math.random()) / 30 * 1,
+          step: 0,
+          angle: 180,
+          opacity: opacity
+        });
+      }
+
+      snow();
+    };
+
+    document.addEventListener("mousemove", function (e) {
+      mX = e.clientX,
               mY = e.clientY
-          });
-          window.addEventListener("resize", function() {
-              canvas.width = window.innerWidth;
-              canvas.height = window.innerHeight;
-          });
-          init();
-      })();
-  }
+    });
+    window.addEventListener("resize", function () {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+    init();
+  })();
 </script>
   </body>
 </html>
