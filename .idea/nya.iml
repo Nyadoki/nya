@@ -23,5 +23,6 @@
     <orderEntry type="library" name="comments" level="application" />
     <orderEntry type="library" name="rocket-loader" level="application" />
     <orderEntry type="library" name="Meting" level="application" />
+    <orderEntry type="library" name="beacon" level="application" />
   </component>
 </module>
