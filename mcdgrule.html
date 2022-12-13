@@ -27,6 +27,13 @@
   <link rel="stylesheet" href="/static/css/MemorialDay.css">
   <script type="text/javascript" src="//mewoth.cyou/static/js/APlayer.min.js"></script>
   <style>.index-filter{display: none}</style>
+	  		<style>
+		body {
+			background: #000;
+			margin: 0;
+			overflow: hidden;
+		}
+		</style>
   <style>.comment-textarea{background-image: url("https://cdns.jks.life/blog/images/textarea.png");}.index-img{background-image: url("http://q1.qlogo.cn/g?b=qq&nk=2316262536&s=640")}</style><style>.background{background-image: url('/static/images/bg.webp');}@media(max-width: 900px){.background{background-image: url('/static/images/mcdgbg.webp');}}</style></head>
   <body class="mdui-theme-primary-light-blue mdui-theme-accent-light-blue">
 
@@ -231,7 +238,18 @@
 <script src="https://cdn.jsdelivr.net/gh/Bhaoo/Cuckoo/assets/js/pjax.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/Bhaoo/Cuckoo/assets/js/cuckoo.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/Bhaoo/Cuckoo/assets/js/comments.min.js"></script>
- <script src="static/js/sakura.js"></script>
+		<script src="/static/js/rain.js"></script>
+		<script>
+			Rain({ 
+				speed: [10,100], 
+				hasBounce: true, 
+				wind_direction: 230, 
+				gravity: 0.163, 
+				maxNum: 1000, 
+				numLevel: 10, 
+				drop_chance: 0.4 
+			});
+		</script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script>qrcode(true);var nowHour=new Date().getHours();if(nowHour>22 || nowHour<6){darkContent('深色模式开启')};
 var OriginTitile = document.title,
