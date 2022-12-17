@@ -1,0 +1,18 @@
+{
+	"name": "@Nyadoki/nya",
+	"version": "1.0.0",
+	"description": "My personal website",
+	"main": "http/index.js",
+	"repository": "git@github.com:Nyadoki/nya.git",
+	"author": "Nyadoki <me@mewoth.cyou>",
+	"license": "BSD-3-Clause",
+	"private": true,
+	"scripts": {
+    "dev": "vite",
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview"
+	},
+	"devDependencies": {
+    "vite": "^4.0.1"
+	}
+}

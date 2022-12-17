@@ -23,11 +23,11 @@
   <link rel="alternate" type="application/rss+xml" title="MCDG群 - 入群须知/群规 &raquo; lilac &raquo; RSS 2.0" href="https://mewoth.cyou/feed/mcdgrule.html" />
   <link rel="alternate" type="application/rdf+xml" title="MCDG群 - 入群须知/群规 &raquo; lilac &raquo; RSS 1.0" href="https://mewoth.cyou/feed/rss/mcdgrule.html" />
   <link rel="alternate" type="application/atom+xml" title="MCDG群 - 入群须知/总群规 &raquo; lilac &raquo; ATOM 1.0" href="https://mewoth.cyou/feed/atom/mcdgrule.html" />
-  <link rel="stylesheet" href="//mewoth.cyou/static/js/APlayer.min.js">
-  <link rel="stylesheet" href="/static/css/MemorialDay.css">
-  <script type="text/javascript" src="//mewoth.cyou/static/js/APlayer.min.js"></script>
+  <link rel="stylesheet" href="//mewoth.cyou/styles/js/APlayer.min.js">
+  <link rel="stylesheet" href="../styles/MemorialDay.css">
+  <script type="text/javascript" src="./styles/js/APlayer.min.js"></script>
   <style>.index-filter{display: none}</style>
-  <style>.comment-textarea{background-image: url("https://cdns.jks.life/blog/images/textarea.png");}.index-img{background-image: url("http://q1.qlogo.cn/g?b=qq&nk=2316262536&s=640")}</style><style>.background{background-image: url('/static/images/bg.webp');}@media(max-width: 900px){.background{background-image: url('/static/images/mcdgbg.webp');}}</style></head>
+  <style>.comment-textarea{background-image: url("https://cdns.jks.life/blog/images/textarea.png");}.index-img{background-image: url("http://q1.qlogo.cn/g?b=qq&nk=2316262536&s=640")}</style><style>.background{background-image: url('/styles/images/bg.webp');}@media(max-width: 900px){.background{background-image: url('/styles/images/mcdgbg.webp');}}</style></head>
   <body class="mdui-theme-primary-light-blue mdui-theme-accent-light-blue">
 
       <div class="background"><div class="index-filter"></div></div>
@@ -67,7 +67,7 @@
     <div class="mdui-col-md-8">
       <div class="mdui-card post-card">
         <div class="mdui-card-media post-card-media">
-          <div class="index-img" data-bg="/static/images/mcdgbg.webp"></div>
+          <div class="index-img" data-bg="/assets/images/mcdgbg.webp"></div>
           <div class="mdui-card-media-covered">
             <div class="mdui-card-primary">
               <div class="mdui-card-primary-title">MCDG群 - 入群须知/群规</div>
@@ -192,14 +192,14 @@
             <br>Ver1.0.1 更新时间2022/08/29 更新内容：<a href="https://github.com/nyadoki/nya/commit/fac5f3fa53b23c344eb5378e91b2beaffb643f5c">减轻处罚规则程度</a>
             <br>Ver1.0.2 更新时间2022/08/30 更新内容：<a href="https://github.com/nyadoki/nya/commit/69c39a2dbea454e20b00072283c0c9e5ccd35d33">加强维护群氛围</a>
             <br>Ver1.0.3 更新时间2022/10/07 更新内容：<a href="https://github.com/nyadoki/nya/commit/5e9b1cd0a6e5ed73860b46cc3aefec7827a6df8d">补充扰乱群秩序类列举</a>
-			<br>Ver1.0.4 更新时间2022/12/02 更新内容：<a href="https://github.com/Nyadoki/nya/commit/9d3b50afaa6fc53b63dd30deeea68bb97906745e">规则优化</a>
+            <br>Ver1.0.4 更新时间2022/12/02 更新内容：<a href="https://github.com/Nyadoki/nya/commit/9d3b50afaa6fc53b63dd30deeea68bb97906745e">规则优化</a>
       </ul></div>
       </div>
 
         <div class="mdui-col-md-4">
           <div class="mdui-card mdui-hoverable sidebar-info">
             <div class="sidebar-info-img">
-              <div class="sidebar-info-bg" style="background-image: url('https://mewoth.cyou/static/images/sidebar.jpg')"></div>
+              <div class="sidebar-info-bg" style="background-image: url('./assets/sidebar.jpg')"></div>
               <div class="mdui-img-circle mdui-shadow-3" style="background-image: url('http://q1.qlogo.cn/g?b=qq&nk=2316262536&s=640')"></div>
             </div>
             <div class="sidebar-info-body">
@@ -231,7 +231,7 @@
 <script src="https://cdn.jsdelivr.net/gh/Bhaoo/Cuckoo/assets/js/pjax.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/Bhaoo/Cuckoo/assets/js/cuckoo.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/Bhaoo/Cuckoo/assets/js/comments.min.js"></script>
-		<script src="/static/js/rain.js"></script>
+		<script src="./styles/js/rain.js"></script>
 		<script>
 			Rain({ 
 				speed: [10,100], 
@@ -250,11 +250,11 @@ titleTime;
 document.addEventListener("visibilitychange",
 function() {
     if (document.hidden) {
-        $('[rel="shortcut icon"]').attr("href", "//mewoth.cyou/favicon.ico");
+        $('[rel="shortcut icon"]').attr("href", "//mewoth.cyou/../favicon.ico");
         document.title = "(つェ⊂) 我藏好了哦~ ";
         clearTimeout(titleTime)
     } else {
-        $('[rel="shortcut icon"]').attr("href", "//mewoth.cyou/favicon.ico");
+        $('[rel="shortcut icon"]').attr("href", "//mewoth.cyou/../favicon.ico");
         document.title = "(*´∇｀*) 被你发现啦~ " + OriginTitile;
         titleTime = setTimeout(function() {
             document.title = OriginTitile
@@ -263,6 +263,6 @@ function() {
     }
 })</script>
 <script type="aa90e4485227d3378bd1b443-text/javascript" src="https://cdns.jks.life/blog/APlayer/Meting.min.js"></script>
-<script src="//mewoth.cyou/static/js/rocket-loader.min.js" data-cf-settings="aa90e4485227d3378bd1b443-|49" defer=""></script>
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "8bec1a0c8ba14804b58c206e103cf1dd"}'></script>
+<script src="//mewoth.cyou/styles/js/rocket-loader.min.js" data-cf-settings="aa90e4485227d3378bd1b443-|49" defer=""></script>
+<script defer src='https://styles.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "8bec1a0c8ba14804b58c206e103cf1dd"}'></script>
 </body></html>
