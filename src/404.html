@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+	<title>無路-404</title>
+	<script type="text/javascript" src="/js/jsdelivr/jquery.min.js"></script>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			display: -webkit-box;
+			display: flex;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			flex-flow: row wrap;
+			align-content: center;
+			-webkit-box-pack: center;
+			justify-content: center;
+		}
+
+		.box__button {
+			display: block;
+			position: relative;
+			background: #FF5E65;
+			border: 1px solid transparent;
+			border-top-color: transparent;
+			border-right-color: transparent;
+			border-bottom-color: transparent;
+			border-left-color: transparent;
+			border-radius: 50px;
+			height: 50px;
+			text-align: center;
+			text-decoration: none;
+			color: #fff;
+			line-height: 50px;
+			font-size: 18px;
+			padding: 0 70px;
+			white-space: nowrap;
+			margin-top: 25px;
+			transition: background .5s ease;
+			overflow: hidden;
+		}
+
+		div {
+			width: 100%;
+			text-align: center;
+		}
+		
+		.effect {
+			margin: 100px 0 0 0;
+			background: #fff;
+			position: relative;
+			font: 900 30vmin 'Consolas';
+			letter-spacing: 5vmin;
+			text-shadow: 2px -1px 0 #000, 4px -2px 0 #0a0a0a, 6px -3px 0 #0f0f0f, 8px -4px 0 #141414, 10px -5px 0 #1a1a1a, 12px -6px 0 #1f1f1f, 14px -7px 0 #242424, 16px -8px 0 #292929;
+		}
+
+		.effect::before {
+			background-color: #06F;
+			background-image: radial-gradient(closest-side at 50% 50%, #ffc107 100%, rgba(0, 0, 0, 0)), radial-gradient(closest-side at 50% 50%, #EF4141 100%, rgba(0, 0, 0, 0));
+			background-repeat: repeat-x;
+			background-size: 40vmin 40vmin;
+			background-position: -100vmin 20vmin, 100vmin -25vmin;
+			width: 100%;
+			height: 100%;
+			mix-blend-mode: screen;
+			-webkit-animation: moving 10s linear infinite both;
+			animation: moving 10s linear infinite both;
+			display: block;
+			position: absolute;
+			content: "";
+		}
+
+		@-webkit-keyframes moving {
+			to {
+				background-position: 100vmin 20vmin, -100vmin -25vmin;
+			}
+		}
+
+		@keyframes moving {
+			to {
+				background-position: 100vmin 20vmin, -100vmin -25vmin;
+			}
+		}
+
+		.text {
+			padding: 0 1vmin;
+			font: 400 5vmin "Courgette";
+		}
+
+		.text span {
+			font-weight: bold;
+			color: #EF4141;
+			font-size: 10vmin;
+		}
+
+		.box__button:before {
+			content: '';
+			position: absolute;
+			width: 20px;
+			height: 100px;
+			background: #fff;
+			bottom: -25px;
+			left: 0;
+			border: 2px solid #fff;
+			transform: translateX(-50px) rotate(45deg);
+			transition: transform .5s ease;
+		}
+
+		html,
+		body {
+			font-family: 'Ubuntu';
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		.box__button {
+			display: block;
+			position: relative;
+			background: #FF5E65;
+			border: 1px solid transparent;
+			border-radius: 50px;
+			height: 50px;
+			text-align: center;
+			text-decoration: none;
+			color: #fff;
+			line-height: 50px;
+			font-size: 18px;
+			padding: 0 70px;
+			white-space: nowrap;
+			margin-top: 80px;
+			transition: background .5s ease;
+			overflow: hidden;
+		}
+
+		.box__button:before {
+			content: '';
+			position: absolute;
+			width: 20px;
+			height: 100px;
+			background: #000;
+			bottom: -25px;
+			color: #0a0a0a;
+			left: 0;
+			border: 2px solid #000;
+			transform: translateX(-50px) rotate(45deg);
+			transition: transform .5s ease;
+		}
+
+		.box__button:hover {
+			background: #000;
+			color: #fff;
+		}
+
+		.box__button:hover:before {
+			transform: translateX(250px) rotate(45deg);
+		}
+
+		@keyframes upndown {
+			0% {
+				transform: translateY(5px);
+			}
+
+			50% {
+				transform: translateY(15px);
+			}
+
+			100% {
+				transform: translateY(5px);
+			}
+		}
+
+		@keyframes smallnbig {
+			0% {
+				width: 90px;
+			}
+
+			50% {
+				width: 100px;
+			}
+
+			100% {
+				width: 90px;
+			}
+		}
+
+		@keyframes shine {
+			0% {
+				opacity: .2;
+			}
+
+			25% {
+				opacity: .1;
+			}
+
+			50% {
+				opacity: .2;
+			}
+
+			100% {
+				opacity: .2;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="effect">無路</div>
+	<div class="text"><span>!DANGER!</span><br>[[[#0xb=!RE_=FUSED!]]]_Un:Re:sponsive</div>
+	<a href="javascript:history.back(-1)" class="box__button">返回</a>
+	</div>
+	</div>
+	<script>
+		var pageX = $(document).width();
+		var pageY = $(document).height();
+		var mouseY = 0;
+		var mouseX = 0;
+		$(document).mousemove(function (event) {
+			mouseY = event.pageY;
+			yAxis = (pageY / 2 - mouseY) / pageY * 300;
+			mouseX = event.pageX / -pageX;
+			xAxis = -mouseX * 100 - 100;
+			$('.box__ghost-eyes').css({
+				'transform': 'translate(' + xAxis + '%,-' + yAxis + '%)'
+			});
+		});
+	</script>
+</body>
+
+</html>
