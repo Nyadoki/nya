@@ -10,7 +10,7 @@
     function Sakura() {
 
         this.img = document.createElement('img');
-        this.img.src = 'sakura.png';
+        this.img.src = 'https://cdn.mewoth.cyou/sakura.png';
         this.img.style.position = 'fixed';
         this.img.height = getRandomNum(32, 48);
         this.x = getRandomNum(-this.img.height, window.innerWidth + window.innerHeight);
