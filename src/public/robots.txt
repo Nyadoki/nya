@@ -1,2 +1,16 @@
 User-agent: nsa
 Disallow: /
+User-agent: Googlebot
+Disallow:
+User-agent: sogou spider
+Disallow:
+User-agent: YodaoBot
+Disallow:
+User-agent: googlebot-image
+Disallow:
+User-agent: Slurp
+Disallow:
+User-agent: txteoma
+Disallow:
+User-agent: twiceler
+Disallow:
