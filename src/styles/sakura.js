@@ -2,8 +2,8 @@
 (function() {
 
     function getRandomNum(min, max) {
-        var range = max - min;
-        var rand = Math.random();
+        const range = max - min;
+        const rand = Math.random();
         return(min + Math.round(rand * range));
     }
 
@@ -50,7 +50,7 @@
 
     }
 
-    var sakuras = [];
+    const sakuras = [];
 
     function load() {
     }
@@ -65,7 +65,7 @@
             sakura.update(dt);
         });
 
-        for (var n = 0; n < sakuras.length; n++) {
+        for (let n = 0; n < sakuras.length; n++) {
             if (sakuras[n].isOutOfWindow()) {
                 sakuras[n].delete();
                 sakuras.splice(n, 1);
@@ -78,11 +78,11 @@
 
     function start() {
 
-        var fps = 60;
-        var lastTime = new Date().getTime();
-        var loop = function() {
-            var nowTime = new Date().getTime();
-            var deltaTime = nowTime - lastTime;
+        const fps = 60;
+        let lastTime = new Date().getTime();
+        const loop = function () {
+            const nowTime = new Date().getTime();
+            const deltaTime = nowTime - lastTime;
             if (deltaTime - 1000 / fps >= 0) {
                 lastTime = nowTime;
                 update(deltaTime / 1000);

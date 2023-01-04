@@ -1,6 +1,6 @@
 (function() {
 
-    var include = document.createElement('iframe');
+    const include = document.createElement('iframe');
     include.style.position = 'fixed';
     include.style.left = '0';
     include.style.top = '0';
