@@ -18,7 +18,8 @@
         if (window.location.hash === '') {
             include.src = document.referrer;
         } else {
-            include.src = window.location.hash.substr(1);
+            let hash = window.location.hash;
+            include.src = hash.substr(1);
         }
     }
     loadUrl();
